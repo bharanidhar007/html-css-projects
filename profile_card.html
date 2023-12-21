@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+        *{
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+
+        }
+
+        .profile-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 25px;
+            padding: 25px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+       
+        .profile-card::before{
+            content: "";
+            top: 0;
+            left: 0;
+            border-radius: 24px 24px 0 0;
+            position: absolute;
+            background-color: #0e4bf1;
+            height: 34%;
+            width: 100%;
+
+        }
+        
+        .image{
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background-color: #4070f4;
+            border-radius: 50%;
+            padding: 3px;
+            margin-bottom: 10px;
+        }
+        .image .profile-img{
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top;
+            width: 100%;
+            height: 100%;
+            border: 3px solid #fff;
+        }
+        .profile-card .text-data{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+        .name{
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .job{
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        .media-buttons{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .link{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            background-color: #4070f4;
+            margin: 0px 8px;
+            font-size: 18px;
+            height: 34px;
+            width: 34px;
+            border-radius: 50%;
+            text-decoration: none;
+            
+        }
+
+        .buttons{
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+        }
+        .button{
+            padding: 8px 24px;
+            margin: 0px 10px;
+            background-color: #4070f4;
+            border: none;
+            border-radius: 24px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 400;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover{
+            background-color: #0e4bf1;
+        }
+        .feedback{
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+        }
+        .data{
+            display: flex;
+            align-items: center;
+            color: #333;
+            padding: 0px 20px;
+            border-right: 2px solid #e7e7e7;
+        }
+        .data i{
+            font-size: 18px;
+            margin-right: 6px;
+        }
+
+        .data:last-child{
+            border-right:none
+        }
+         
+      </style>
+</head>
+<body>
+    
+    <div class="profile-card">
+        <div class="image">
+            <img src="images.jpeg" class="profile-img" alt="">
+        </div>
+        <div class="text-data">
+            <span class="name">Tom curise</span>
+            <span class="job">Actor & Stunt man</span>
+        </div>
+        <div class="media-buttons">
+            <a href="#"  style="background-color:#4267b2 ;"   class="link">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="#" style="background-color:#1da1f2 ;" class="link">
+                <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="#" style="background-color: #e1306e;" class="link">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="#" style="background-color:#ff0000 ;" class="link">
+                <i class='bx bxl-youtube'></i>
+            </a>
+            
+        </div>
+
+        <div class="buttons">
+            <button class="button">Subscribe</button>
+            <button class="button">Message</button>
+        </div>
+
+        <div class="feedback">
+            <div class="data">
+                <i class='bx bx-heart'></i>
+                <span class="values">20k</span>
+            </div>
+            <div class="data">
+                <i class='bx bx-message-rounded'></i>
+                <span class="values">10k</span>
+            </div>
+            <div class="data">
+                <i class='bx bx-share' ></i>
+                <span class="values">4k</span>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
